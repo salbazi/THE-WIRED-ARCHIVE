@@ -320,3 +320,41 @@
     max-width: 100%;
     display: block;
 }
+
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
+    .layers-cards {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .layer-card {
+        height: 115px;
+    }
+
+    .layer-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .research-block {
+        gap: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .research-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .layer-introduction {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .research-image img,
+    .research-image video {
+        max-width: 100%;
+        height: auto;
+    }
+}
