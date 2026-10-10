@@ -519,14 +519,15 @@ main {
 
     .database-main,
     .layers-main {
-    width: calc(100% - 420px);
-    max-width: 1500px;
-    margin: 0 0 0 420px;
-    padding: 35px 20px 50px;
-    position: relative;
-    box-sizing: border-box;
-    z-index: 2;
-}
+        width: calc(100% - 420px);
+        max-width: 1500px;
+        margin: 0 0 0 420px;
+        padding: 20px 12px 40px;
+        position: relative;
+        box-sizing: border-box;
+        z-index: 2;
+        min-width: 0;
+    }
 
     .database-page .navi-system,
     .layers-page .navi-system {
