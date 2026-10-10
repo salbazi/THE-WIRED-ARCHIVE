@@ -1,0 +1,322 @@
+.layers-page {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.layers-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("Images/lainsroom.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.layers-title::before,
+.layers-title::after {
+    content: "LAYERS";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.layers-title::before {
+    color: #00ffff;
+    transform: translate(-2px, 1px);
+    clip-path: inset(0 0 55% 0);
+}
+
+.layers-title::after {
+    color: #0066ff;
+    transform: translate(2px, -1px);
+    clip-path: inset(55% 0 0 0);
+}
+
+.layers-status {
+    width: auto;
+    margin-top: 15px;
+    padding: 0;
+    background: transparent;
+    color: #aeb9e8;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.17em;
+    text-align: left;
+}
+
+.layers-status p {
+    margin: 0;
+}
+
+.layers-content {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.layers-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 0;
+}
+
+.layers-end {
+    color: #aeb9e8;
+    margin-top: 20px;
+    padding: 25px 10px 8px;
+    border-top: 1px solid rgba(140, 155, 215, 0.5);
+    font-size: 0.82rem;
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.layers-end p {
+    margin: 0;
+}
+
+.layer-card {
+    background: rgba(0, 0, 0, 0.62);
+    color: #aeb9e8;
+    border: 1px solid rgba(140, 155, 215, 0.7);
+    width: 100%;
+    height: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.layer-card:hover,
+.layer-card:focus-visible {
+    color: #63FF1A;
+    border-color: #63FF1A;
+    text-decoration: none;
+}
+
+.layer-card.active {
+    color: #06C115;
+    border-color: #06C115;
+}
+
+.layer-card .card-image {
+    border-left: 1px solid rgba(140, 155, 215, 0.45);
+}
+
+.layer-card .card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.layer-information {
+    width: 100%;
+    margin: 12px 0 0;
+    background: rgba(0, 0, 0, 0.72);
+    border: 1px solid rgba(140, 155, 215, 0.7);
+    padding: 18px 16px 14px;
+}
+
+.layer-section {
+    min-height: auto;
+    padding: 0 50px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: left;
+}
+
+.layer-section h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+}
+
+.layer-section h3 {
+    margin: 15px 0 40px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+}
+
+.layer-section p {
+    color: #ffffff;
+    max-width: 750px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+}
+
+.reality-section {
+    width: 100%;
+    font-size: 0;
+}
+
+.identity-section .research-block.identity-side,
+.memory-section .research-block.memory-side,
+.perception-section .research-block.perception-side,
+.connection-section .research-block.connection-side {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding: 35px 20px;
+    box-sizing: border-box;
+}
+
+.identity-section .research-block.identity-side .research-text,
+.memory-section .research-block.memory-side .research-text,
+.perception-section .research-block.perception-side .research-text,
+.connection-section .research-block.connection-side .research-text {
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.connection-section .research-block.connection-side,
+.connection-section .research-block.connection-side .research-text {
+    margin: 0;
+}
+
+.layer-heading {
+    padding: 5px 35px 20px;
+}
+
+.layer-heading h2 {
+    margin: 0 0 15px;
+    font-size: 2.2rem;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+    color: #06C115;
+}
+
+.layer-heading h3 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+}
+
+.layer-introduction {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 35px 60px;
+}
+
+.layer-introduction p {
+    color: #ffffff;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    margin: 0 0 18px;
+}
+
+.research-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.research-block.text-only {
+    display: block;
+    padding: 10px 25px 15px;
+}
+
+.research-block.text-only .research-text {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 10px 35px;
+    box-sizing: border-box;
+}
+
+.reality-side {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    box-sizing: border-box;
+    padding: 35px 20px;
+}
+
+.reality-side .research-text {
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+}
+
+.research-text {
+    width: 100%;
+    padding: 20px 35px;
+    box-sizing: border-box;
+}
+
+.research-text h2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 25px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.45;
+    letter-spacing: 0.08em;
+    color: #EE7809;
+}
+
+.research-text h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(140, 155, 215, 0.6);
+}
+
+.research-text p {
+    margin: 0 0 18px;
+}
+
+.research-text blockquote {
+    max-width: 800px;
+    margin: 25px 0;
+    padding-left: 20px;
+    color: #aeb9e8;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.research-text strong {
+    color: #00FBFE;
+}
+
+.research-text em {
+    font-style: italic;
+}
+
+.research-image {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.research-image img,
+.research-image video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect | The Wired Archive</title>
+
+    <meta name="description" content="Connect to the Wired through The Wired Archive.">
+
+    <link rel="icon" type="image/x-icon" href="navi.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="connect.css">
+</head>
+
+<body class="connect-page">
+
+    <img src="Connect Images/Copland OS Enterprise.gif" alt="" class="connect-background">
+
+    <main class="connect-main">
+        <header class="connect-header">
+            <nav class="navi-system" aria-label="Main navigation">
+                <div class="navi-window-bar">
+                    <span class="navi-window-title">NAVI SYSTEM</span>
+
+                    <div class="navi-window-controls">
+                        <span class="navi-window-version">v1.0</span>
+                        <span class="navi-close" aria-hidden="true">×</span>
+                    </div>
+                </div>
+
+                <div class="navi-header">
+                    <span>SYSTEM STATUS</span>
+                    <span class="navi-online">ONLINE</span>
+                </div>
+
+                <div class="navi-menu">
+                    <a href="database.html" class="navi-option">
+                        <span class="navi-number">01</span>
+                        <span class="navi-name">DATABASE</span>
+                        <span class="navi-arrow">&gt;</span>
+                    </a>
+
+                    <a href="layers.html" class="navi-option">
+                        <span class="navi-number">02</span>
+                        <span class="navi-name">LAYERS</span>
+                        <span class="navi-arrow">&gt;</span>
+                    </a>
+
+                    <a href="connect.html" class="navi-option active">
+                        <span class="navi-number">03</span>
+                        <span class="navi-name">CONNECT</span>
+                        <span class="navi-arrow">&gt;</span>
+                    </a>
+                </div>
+
+                <div class="navi-status">
+                    <div>NETWORK: THE WIRED</div>
+                    <div>CONNECTION:<span> ACTIVE </span></div>
+                    <div>USER: GUEST_</div>
+
+                    <div class="navi-home">
+                    <a href="index.html">// SYSTEM HOME</a>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="wired-chat" aria-label="Wired connection interface">
+            <div class="wired-chat-bar">
+                <span class="wired-chat-title">CROSSTALK</span>
+                <div class="wired-chat-controls">
+                    <span class="wired-chat-version">v1.0</span>
+                    <span class="wired-chat-close" aria-hidden="true">×</span>
+                </div>
+            </div>
+
+            <div class="wired-chat-content">
+                <div class="wired-chat-screen" id="chat-screen">
+                    <!-- LAIN CHAT CONTENT CONTROLLED BY JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="connection-log" aria-label="Wired connection form">
+            <div class="connection-log-bar">
+                <span class="connection-log-title">CONNECTION REQUEST</span>
+                <div class="connection-log-controls">
+                    <span class="connection-log-version">v1.0</span>
+                    <span class="connection-log-close" aria-hidden="true">×</span>
+                </div>
+            </div>
+
+            <div class="connection-log-content">
+                <div class="connection-log-screen">
+                    <div class="connection-log-intro">
+                        <div class="connection-log-system">
+                            // NO MATTER WHERE YOU ARE, EVERYONE IS ALWAYS CONNECTED.
+                        </div>
+                        <p>IDENTIFY YOURSELF TO THE WIRED.</p>
+                    </div>
+
+                    <form action="#" method="post" class="wired-form">
+                        <div class="wired-field">
+                            <label for="wired-name">NAME</label>
+                            <input type="text" id="wired-name" name="name" required>
+                        </div>
+
+                        <div class="wired-field">
+                            <label for="wired-email">EMAIL</label>
+                            <input type="email" id="wired-email" name="email" required>
+                        </div>
+
+                        <div class="wired-field">
+                            <label for="wired-layer">WHICH LAYER RESONATED WITH YOU?</label>
+                            <select id="wired-layer" name="layer" required>
+                                <option value="">SELECT LAYER</option>
+                                <option value="reality">REALITY</option>
+                                <option value="identity">IDENTITY</option>
+                                <option value="memory">MEMORY</option>
+                                <option value="perception">PERCEPTION</option>
+                                <option value="connection">CONNECTION</option>
+                            </select>
+                        </div>
+
+                        <div class="wired-field">
+                            <label for="wired-experience">YOUR EXPERIENCE WITH THE WIRED</label>
+                            <textarea id="wired-experience" name="experience" rows="4" required></textarea>
+                        </div>
+
+                        <div class="wired-submit">
+                            <button type="submit">TRANSMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="webcam-window" aria-label="Webcam window">
+            <div class="webcam-window-bar">
+                <span class="webcam-window-title">NAVI_CAM</span>
+                <div class="webcam-window-controls">
+                    <span class="webcam-window-version">v1.0</span>
+                    <span class="webcam-window-close" aria-hidden="true">×</span>
+                </div>
+            </div>
+
+            <div class="webcam-window-content">
+                <img src="Connect Images/lainwebcam.gif" alt="webcamlain">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li aria-hidden="true">|</li>
+                <li><a href="mailto:salbazi@asu.edu">EMAIL</a></li>
+                <li aria-hidden="true">|</li>
+                <li><span>© 2026 THE WIRED ARCHIVE</span></li>
+            </ul>
+        </nav>
+
+        <img src="Images/powernavi-badge.jpg" alt="Powered by NAVI" class="navi-badge">
+    </footer>
+
+    <script src="connect.js"></script>
+
+</body>
+</html>
