@@ -598,3 +598,33 @@
     max-height: 350px;
     object-fit: contain;
 }
+
+@media screen and (max-width: 2000px) {
+    .connect-main {
+        width: calc(100% - 420px);
+        max-width: 1500px;
+        margin: 0 0 0 420px;
+    }
+
+    .connect-page .navi-system {
+        right: calc(100% + 20px);
+    }
+
+    .wired-chat {
+        left: auto;
+        right: 15px;
+        transform: translateY(-50%);
+        width: min(420px, calc(100% - 30px));
+        box-sizing: border-box;
+    }
+
+    .webcam-window {
+        right: 460px;
+        width: 320px;
+    }
+
+    .connection-log {
+        left: 5%;
+        width: min(560px, 90%);
+    }
+}

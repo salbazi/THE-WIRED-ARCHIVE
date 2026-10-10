@@ -510,3 +510,26 @@ main {
     line-height: 1.75;
     letter-spacing: 0.025em;
 }
+
+@media screen and (max-width: 2000px) {
+    .home-layout {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .database-main,
+    .layers-main {
+    width: calc(100% - 420px);
+    max-width: 1500px;
+    margin: 0 0 0 420px;
+    padding: 35px 20px 50px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+    .database-page .navi-system,
+    .layers-page .navi-system {
+        right: calc(100% + 20px);
+    }
+}
